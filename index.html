@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+  <!-- Bootstrap CSS cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./aos-master/dist/aos.css">
+  <!-- AOS CSS cdn -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- start Navbar****************************************** -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-1 sticky-top">
+  <!-- start grid system row and columns -->
+    <div class="container-fluid">
+
+      <div class=""><a class="navbar-brand display fs-2" href="#"><img src="./img/logonav.png" alt="" width="120"
+            height="120"> <span class=" logo text-danger fs-2">Burger</span></a></div>
+
+      <div class=" fs-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="mx-2 nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="mx-2 nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="mx-2 nav-item">
+              <a class="nav-link" href="#Menu">Menu</a>
+            </li>
+            <li class="mx-2 nav-item">
+              <a class="nav-link" href="#Events">Events</a>
+            </li>
+            <li class="mx-2 nav-item">
+              <a class="nav-link" href="#Chefs">Chefs</a>
+            </li>
+            <li class="mx-2 nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class=" mx-2 nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="mx-2 nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      
+
+     <button class=" mybtn btn btn-danger fs-5 btn-lg align-items-center"> Burger</button>
+    </div>
+  </nav>
+  <!-- end-navbar>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+  
+  <!-- start hero section************************************** -->
+  <section class="home hero container-fluid bg-light py-5" id="home">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        
+        <div class="col-lg-6 col-md-12 text-center text-lg-start">
+          <h1 class="display-6 fw-bold pb-3">
+            I am Diala, a trainee at AlBarakah association making a website with Bootstrap
+          </h1>
+          <p class="lead text-muted pb-4">ENJOY YOUR HEALTHY DELICIOUS FOOD</p>
+          
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center gap-3">
+            <a href="#" class="btn btn-danger btn-lg">Book a Table</a>
+            <span class="lead fw-bold d-flex align-items-center">
+              <i class="fa-solid fa-video text-danger fs-3 me-2"></i> Watch Video
+            </span>
+          </div>
+        </div>
+  
+        <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+          <img src="./img/hero brger.png" class="img-fluid" alt="">
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- start About section ********************************** -->
+  <div data-aos="fade-up" data-aos-duration="3000">
+
+    <section class="container py-5" id="About">
+      <div class="text-center">
+        <h6 class="mt-5 text-muted lead">ABOUT US</h6>
+        <h2 class="mt-3 mb-5"> LEARN MORE <span class="text-danger"> ABOUT US</span> </h2>
+      </div>
+    
+      <div class="row justify-content-center align-items-center gx-4">
+        <!-- العمود الأول -->
+        <div class="col-12 col-md-6 text-center">
+          <img src="./img/مجلد جديد/p.jpg" alt="" class="img-fluid rounded">
+          <div class="border border-secondary border-3 p-3 mt-3">
+            <div class="text-dark text-center">
+              <h5 class="fw-bold">Book a Table</h5>
+              <h5 class="text-danger">+1 5589 55488 55</h5>
+            </div>
+          </div>
+        </div>
+    
+        <!-- العمود الثاني -->
+        <div class="col-12 col-md-6">
+          <p class="text-muted fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus corrupti cupiditate, molestiae fugit ipsam dicta aperiam sed magni architecto qui.</p>
+          <ul class="list-unstyled">
+            <li><i class="fa-solid fa-check-circle text-danger p-1"></i> Ullamco ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</li>
+            <li><i class="fa-solid fa-check-circle text-danger p-1"></i> Ullamco ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</li>
+            <li><i class="fa-solid fa-check-circle text-danger p-1"></i> Ullamco ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</li>
+          </ul>
+          <p>Ullamco ipsum, dolor sit amet consectetur adipisicing elit. Quas cum quod amet dolorem, quae a ipsum sequi, tempore similique id voluptates nulla aut cumque at!</p>
+    
+          <!-- Video YouTube -->
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/BuZzpQgyDYM?si=nhPAHHvi0xCv0VFp"
+              title="YouTube video player" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </div>
+
+  <!-- Start section why choose yummy****************************** -->
+  <section class=" container-fluid gry p-5">
+    <!-- بداية الصف  -->
+    <div data-aos="fade-up" data-aos-duration="3000">
+      <div class=" row container-fluid  mt-5 g-2 justify-content-center">
+        <!-- العمود الاول لونه احمر -->
+
+        <div class=" card col-12 col-md-3 col-lg-3 mx-3 bg-danger align-items-center p-4">
+
+          <p class="lead display-6 white "> why choose Burger</p>
+          <p class="white mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, totam adipisci!
+            Ullam
+            temporibus dolore odio reprehenderit tempore atque tempora tenetur, natus quo ex. Assumenda eos earum nam
+            ullam nihil beatae!
+          </p>
+          <div class=" mybtn btn btn-light fs-5 btn-lg mt-3">Learn More > </div>
+
+        </div>
+        <!-- العمود الثاني -->
+        <div class="card col-12 col-md-3 col-lg-2 mx-3 p-5"><i
+            class="fa-solid fa-vector-square text-danger p-4 fs-1 text-center"> </i>
+          <p>Corporis voluptates officia eiusmod </p>
+          <p class="text-muted"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione! Lorem ipsum dolor
+            sit
+            amet consectetur.</p>
+        </div>
+        <!-- العمود الثالث -->
+        <div class="card col-12 col-md-3 col-lg-2 mx-3 p-5"><i
+            class="fa-regular fa-gem text-danger p-4 fs-1 text-center "> </i>
+          <p>Corporis voluptates officia eiusmod </p>
+          <p class="text-muted"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione! Lorem ipsum dolor
+            sit
+            amet consectetur.</p>
+        </div>
+        <!-- العمود الرابع -->
+        <div class="card col-12 col-md-3 col-lg-2 mx-3 p-5">
+          <i class="fa-solid fa-palette text-danger p-4 fs-1 text-center "> </i>
+          <p>Corporis voluptates officia eiusmod </p>
+          <p class="text-muted"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione! Lorem ipsum dolor
+            sit
+            amet consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <!-- End section why choose Burger>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+  </section>
+
+  <!-- العداد -->
+  <section class="container-fluid py-5 position-relative">
+    <figure class="position-relative">
+      <img src="./img/stats-bg.jpg" alt="counter" class="img-fluid w-100"
+        style="height: 600px; object-fit: cover; filter: brightness(30%);">
+      
+      <div class="position-absolute top-50 start-50 translate-middle w-100">
+        <div class="container">
+          <div class="row text-center text-white">
+
+            <div class="col-6 col-md-3 mb-4">
+              <h2 class="num fs-1 fw-bold" data-val="200">000</h2>
+              <p class="fs-5">Clients</p>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+              <h2 class="num fs-1 fw-bold" data-val="90">000</h2>
+              <p class="fs-5">Projects</p>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+              <h2 class="num fs-1 fw-bold" data-val="225">000</h2>
+              <p class="fs-5">Hours of Support</p>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+              <h2 class="num fs-1 fw-bold" data-val="10">000</h2>
+              <p class="fs-5">Workers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </figure>
+  </section>
+  
+
+
+  <!-- Start section our Menu************************************** -->
+
+  <section class=" container-fluid" id="Menu">
+
+    <div class="text-center " style="position: relative;margin-top: 15rem;">
+      <h6 class=" mt-5 text-muted lead">OUR MENU</h6>
+      <h2 class="mt-3 mb-5">CHECK OUR <span class="text-danger">Burger MENU</span> </h2>
+    </div>
+    <div class="text-center"></div>
+
+    <div data-aos="fade-up" data-aos-duration="3000">
+
+      <div class="row">
+
+        <div class="col-sm-12 col-md-6 col-lg-4  p-3">
+          <div class="card-body text-center p-4">
+            <img src="./img/menu/0910bb877f88e1145fd0b8110a9e4629-removebg-preview.png" class="img-fluid mb-3" alt=""
+              width="250" height="250">
+            <h5 class="lead fs-2">Magnam Tist</h5>
+            <p class="text-muted">lorem,deren,trataro,filde,nerada</p>
+            <p class="text-danger fs-2"> <b>$ 5.95</b></p>
+          </div>
+
+        </div>
+
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+          <div class="card-body text-center p-4">
+            <img src="./img/menu/menu-item-2.png" class="img-fluid mb-3" alt="" width="250" height="250">
+            <h5 class="lead fs-2">Magnam Tist</h5>
+            <p class="text-muted">lorem,deren,trataro,filde,nerada</p>
+            <p class="text-danger fs-2"> <b>$ 5.95</b></p>
+          </div>
+
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4  p-3">
+          <div class="card-body text-center p-4">
+            <img src="./img/menu/chiken.png" class="img-fluid mb-3" alt="" width="330" height="30">
+            <h5 class="lead fs-2">Magnam Tist</h5>
+            <p class="text-muted">lorem,deren,trataro,filde,nerada</p>
+            <p class="text-danger fs-2"> <b>$ 5.95</b></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="fade-up" data-aos-duration="3000">
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4  p-3">
+          <div class="card-body text-center p-4">
+            <img src="./img/menu/menu-item-4.png" class="img-fluid mb-3" alt="" width="250" height="250">
+            <h5 class="lead fs-2">Magnam Tist</h5>
+            <p class="text-muted">lorem,deren,trataro,filde,nerada</p>
+            <p class="text-danger fs-2"> <b>$ 5.95</b></p>
+          </div>
+
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4  p-3">
+          <div class="card-body text-center p-4">
+            <img src="./img/menu/kabab.png" class="img-fluid mb-3" alt="" width="250" height="250">
+            <h5 class="lead fs-2">Magnam Tist</h5>
+            <p class="text-muted">lorem,deren,trataro,filde,nerada</p>
+            <p class="text-danger fs-2"> <b>$ 5.95</b></p>
+          </div>
+
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4  p-3">
+          <div class="card-body text-center p-4">
+            <img src="./img/menu/menu-item-6.png" class="img-fluid mb-3" alt="" width="250" height="250">
+            <h5 class="lead fs-2">Magnam Tist</h5>
+            <p class="text-muted">lorem,deren,trataro,filde,nerada</p>
+            <p class="text-danger fs-2"> <b>$ 5.95</b></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- section commit -->
+    <!-- سلايد -->
+    <section class="commit">
+      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="section gry w-100 d-block min-vh-100">
+              <div class="container-fluid">
+    
+                <div class="text-center pt-4">
+                  <h6 class="mt-5 text-muted lead">TESTIMONIALS</h6>
+                  <h3 class="mt-3 mb-5"> WHAT ARE THEY <span class="text-danger"> SAYING ABOUT US</span> </h3>
+                  <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-sm-10 text-center">
+                      <img src="./img/testimonials/commit.png" class="img-fluid" alt="Commit Image">
+                      <img src="./img/testimonials/testimonials-1.jpg" alt="" class="rounded-circle img-fluid mt-3" width="150">
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="carousel-item">
+            <div class="section gry w-100 d-block min-vh-100">
+              <div class="container-fluid">
+                <div class="text-center pt-4">
+                  <h6 class="mt-5 text-muted lead">TESTIMONIALS</h6>
+                  <h3 class="mt-3 mb-5"> WHAT ARE THEY <span class="text-danger"> SAYING ABOUT US</span> </h3>
+                  <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-sm-10 text-center">
+                      <img src="./img/testimonials/commit.png" class="img-fluid" alt="Commit Image">
+                      <img src="./img/testimonials/testimonials-2.jpg" alt="" class="rounded-circle img-fluid mt-3" width="150">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="carousel-item">
+            <div class="section gry w-100 d-block min-vh-100">
+              <div class="container-fluid">
+                <div class="text-center pt-4">
+                  <h6 class="mt-5 text-muted lead">TESTIMONIALS</h6>
+                  <h3 class="mt-3 mb-5"> WHAT ARE THEY <span class="text-danger"> SAYING ABOUT US</span> </h3>
+                  <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-sm-10 text-center">
+                      <img src="./img/testimonials/commit.png" class="img-fluid" alt="Commit Image">
+                      <img src="./img/testimonials/testimonials-3.jpg" alt="" class="rounded-circle img-fluid mt-3" width="150">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="carousel-item">
+            <div class="section gry w-100 d-block min-vh-100">
+              <div class="container-fluid">
+                <div class="text-center pt-4">
+                  <h6 class="mt-5 text-muted lead">TESTIMONIALS</h6>
+                  <h3 class="mt-3 mb-5"> WHAT ARE THEY <span class="text-danger"> SAYING ABOUT US</span> </h3>
+                  <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-sm-10 text-center">
+                      <img src="./img/testimonials/commit.png" class="img-fluid" alt="Commit Image">
+                      <img src="./img/testimonials/testimonials-4.jpg" alt="" class="rounded-circle img-fluid mt-3" width="150">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    
+    <!-- End section commit>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <!-- start slid Swiper ******************************************* -->
+    <section class="events" id="Events">
+
+      <!-- ???????????????? -->
+
+    </section> 
+    <!-- end slid Swiper ******************************************* -->
+
+    <!-- Start section cards chef *********************************************** -->
+    <div data-aos="fade-up" data-aos-duration="3s">
+
+      <section class=" container-fluid pt-2" id="Chefs">
+        <div class="text-center pt-5">
+          <h6 class=" mt-5 text-muted lead">CHEFS</h6>
+          <h3 class="mt-3 mb-5">OUR <span class="text-danger"> PROFFESIONAL CHEFS</span> </h3>
+        </div>
+
+        <div class="container my-5 g-4">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="card zoom-card"> <img src="./img/chefs/e257fbe51204d49d2820c0ef9eda35ef.jpg"
+                  class="card-img-top " alt=" 1" height="375">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-secondary fs-3">Essam Msouti</h5>
+                  <p class="card-text text-center fs-5" style="color: rgba(128, 128, 128, 0.336)">Master chef</p>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eaque dicta, quas
+                    reprehenderit accusantium corrupti tempora voluptate consequuntur non quaerat id officiis obcaecati
+                    repudiandae,</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <div class="card zoom-card"> <img src="./img/chefs/0c9de543d173163dc241c7f38fbe060f.jpg"
+                  class="card-img-top" alt=" 2" height="375">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-secondary fs-3"> Taiser Maidani</h5>
+                  <p class="card-text text-center fs-5" style="color: rgba(128, 128, 128, 0.336)">Master chef</p>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed accusamus quidem,
+                    nobis
+                    a quibusdam hic architecto eum, velit sequi beatae odio nam id, aliquid corporis excepturi officiis
+                    tempora harum amet.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card zoom-card "> <img src="./img/chefs/635b07a4837fa9ba04f77ef7d73a4daa.jpg"
+                  class="card-img-top" alt=" 3" height="375">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-secondary fs-3">William Anderson</h5>
+                  <p class="card-text text-center fs-5" style="color: rgba(128, 128, 128, 0.336)">Master chef</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facere labore
+                    saepe
+                    reiciendis quod dolorem enim, dignissimos recusandae voluptates esse non molestiae, dicta laborum
+                    in,
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <!-- END section cards chef>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. -->
+
+    <!-- start form>>>>>>>> -->
+    <div data-aos="fade-up" data-aos-duration="3000">
+
+      <section class="container mt-5">
+        <div class="text-center">
+          <h6 class="mt-5 text-muted lead">BOOK A TABLE</h6>
+          <h2 class="mt-3 mb-5">BOOK YOUR <span class="text-danger">STAY WITH US</span></h2>
+        </div>
+      
+        <div class="container-fluid bg-light p-4 d-flex flex-column flex-lg-row align-items-center">
+          <img src="./img/مجلد جديد/fast food.jpg" alt="" class="img-fluid mb-4 mb-lg-0" width="400px" height="200px">
+      
+          <form class="w-100 px-lg-4">
+            <div class="row g-3 text-center">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <input type="text" class="form-control" placeholder="Your Name" aria-label="Your name">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <input type="text" class="form-control" placeholder="Your Phone" aria-label="Your Phone">
+              </div>
+            </div>
+      
+            <div class="row g-3 pt-3">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <input type="date" class="form-control" aria-label="Reservation Date">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <input type="time" class="form-control" aria-label="Reservation Time">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <input type="text" class="form-control" placeholder="Enter Order" aria-label="Order Details">
+              </div>
+            </div>
+      
+            <div class="form-floating pt-3">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2" class="text-muted">Message</label>
+            </div>
+      
+            <div class="text-center mt-4">
+              <button type="button" class="btn btn-outline-danger">BOOK A TABLE</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <!-- END Section form>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. -->
+  </section>
+
+  <!-- Start section Contact ******************************************** -->
+  <section class="contact" id="contact">
+    <div class="text-center">
+      <h6 class=" mt-5 text-muted lead">CONTACT</h6>
+      <h2 class="mt-3 mb-5">NEED HELP?<span class="text-danger">CONTACT US</span> </h2>
+    </div>
+
+    <div class="container ">
+      <!-- map>>>> -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26614.054001980418!2d36.312399419746455!3d33.50770532927619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z2YXYt9i52YUg2K_Zhdi02YI!5e0!3m2!1sar!2s!4v1733026298847!5m2!1sar!2s"
+        height="300" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <!-- anemation cards contact -->
+    <div data-aos="fade-up" data-aos-duration="3000">
+
+      <!-- كونتينر يحوي 4 كاردات -->
+      <div class="container my-5 text-center">
+        <!-- الصف الأول -->
+        <div class="row justify-content-center g-4">
+          <div class="col-lg-5 col-md-6 col-12 shadow d-flex align-items-center p-3">
+            <div class="mx-3"><i class="fa-solid fa-location-dot text-danger fs-1"></i></div>
+            <div>
+              <h5 class="my-2">Address</h5>
+              <h6>A108 Adam Street, New York, NY 535022</h6>
+            </div>
+          </div>
+      
+          <div class="col-lg-5 col-md-6 col-12 shadow d-flex align-items-center p-3">
+            <div class="mx-3"><i class="fa-solid fa-phone text-danger fs-1"></i></div>
+            <div>
+              <h5 class="my-2">Call Us</h5>
+              <h6>+1 5749 76543 55</h6>
+            </div>
+          </div>
+        </div>
+      
+        <!-- الصف الثاني -->
+        <div class="row mt-4 justify-content-center g-4">
+          <div class="col-lg-5 col-md-6 col-12 shadow d-flex align-items-center p-3">
+            <div class="mx-3"><i class="fa-solid fa-envelope text-danger fs-1"></i></div>
+            <div>
+              <h5 class="my-2">Email Us</h5>
+              <h6>dialakhaled@gmail.com</h6>
+            </div>
+          </div>
+      
+          <div class="col-lg-5 col-md-6 col-12 shadow d-flex align-items-center p-3">
+            <div class="mx-3"><i class="fa-solid fa-clock text-danger fs-1"></i></div>
+            <div>
+              <h5 class="my-2">Opening Hours</h5>
+              <h6>Mon-Sat: 11AM - 11PM; Friday: Closed</h6>
+            </div>
+          </div>
+        </div>
+      
+        <div data-aos="fade-up" data-aos-duration="3000" class="mt-5">
+          <div class="d-flex justify-content-center">
+            <form class="w-100 shadow p-5">
+              <div class="row g-3">
+                <div class="col-md-6 col-12">
+                  <input type="text" class="form-control" placeholder="Your Name" aria-label="Your Name">
+                </div>
+                <div class="col-md-6 col-12">
+                  <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email">
+                </div>
+              </div>
+      
+              <div class="row g-3 mt-3">
+                <div class="col-12">
+                  <input type="date" class="form-control" aria-label="Date">
+                </div>
+              </div>
+      
+              <div class="row g-3 mt-3">
+                <div class="col-12 form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2" class="text-muted">Message</label>
+                </div>
+              </div>
+      
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-danger fs-5 btn-lg">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+  </section>
+
+  <!-- واخيراااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااااا -->
+   <!--START FOOTER -->
+   <footer class="container-fluid bg-dark text-light py-5">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 col-12 mb-4 d-flex align-items-center">
+          <i class="fa-solid fa-location-dot text-danger fs-1 me-3"></i>
+          <div>
+            <h5>Address</h5>
+            <h6>A108 Adam Street, New York, NY 535022</h6>
+            <h6>New York, NT 535022</h6>
+          </div>
+        </div>
+  
+        
+        <div class="col-md-4 col-12 mb-4 d-flex align-items-center">
+          <i class="fa-solid fa-phone text-danger fs-1 me-3"></i>
+          <div>
+            <h5>Contact</h5>
+            <h6>+1 5749 76543 52</h6>
+            <h6>dialakhaled@gmail.com</h6>
+          </div>
+        </div>
+  
+        <div class="col-md-4 col-12 mb-4 d-flex align-items-center">
+          <i class="fa-solid fa-clock text-danger fs-1 me-3"></i>
+          <div>
+            <h5>Opening Hours</h5>
+            <h6>Mon-Sat: 11AM - 11PM</h6>
+            <h6>Friday: Closed</h6>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row mt-4">
+        <div class="col text-center">
+          <h5>Follow Us</h5>
+          <div class="d-flex justify-content-center gap-3 mt-2">
+            <i class="fa-brands fa-youtube fs-2 text-danger"></i>
+            <i class="fa-brands fa-x-twitter fs-2 text-danger"></i>
+            <i class="fa-brands fa-facebook fs-2 text-danger"></i>
+            <i class="fa-brands fa-instagram fs-2 text-danger"></i>
+          </div>
+        </div>
+      </div>
+  
+      <hr class="text-secondary my-4">
+  
+      <div class="text-center">
+        <p class="fs-6 text-secondary">
+          &copy; Copyright <span class="text-white">TIBA</span>. All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- counter -->
+  <script>
+    let valueDisplays = document.querySelectorAll(".num");
+    let interval = 5000;
+    valueDisplays.forEach(valueDisplay => {
+      let startValue = 0;
+      let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+
+      let duration = Math.floor(interval / endValue);
+      let counter = setInterval(function () {
+        startValue += 1;
+        valueDisplay.textContent = startValue;
+        if (startValue == endValue) {
+          clearInterval(counter);
+        }
+
+      }, duration);
+
+
+    }); 
+  </script>
+  <!-- end counter -->
+
+  <!-- السهم  -->
+  <a id="scrollToTopBtn" class="align-items-end p-3" href="#top"><i
+      class=" fas fa-arrow-up fs-1 text-danger mt-1"></i></a>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- سلايد Swiper -->
+  <!-- <script>
+   
+    const swiper = new Swiper('.swiper-container', {
+        loop: true,  
+        autoplay: {
+            delay: 2000,   
+        },
+        pagination: {
+            el: '.swiper-pagination',  
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',    
+            prevEl: '.swiper-button-prev', 
+        },
+    });
+</script> -->
+
+
+  <!--   AOS +  تضمين مكتبة الجافا في البوتسراب +  \ -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+   <script>
+    AOS.init();
+  </script>
+  <!-- AOS  -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><!-- SWIPER -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+</body>
+
+
+</html>
